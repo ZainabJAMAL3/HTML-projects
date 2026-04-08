@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Berry Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 0;
+            background-image: url('images2/berry.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Page container - 960px width and centered */
+        .page {
+            width: 960px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        /* Header with background color #732C7B */
+        header {
+            background-color: #732C7B;
+            padding: 20px;
+            overflow: auto;
+            position: relative;
+        }
+        
+        /* Title h1 centered, white */
+        h1 {
+            text-align: center;
+            color: white;
+            margin: 0;
+            font-size: 36px;
+        }
+        
+        /* Remaining text in header - half size of h1 (18px) */
+        .header-text {
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        /* Image in header floating right */
+        .header-image {
+            float: right;
+            width: 80px;
+            height: auto;
+            border: 2px solid white;
+            border-radius: 5px;
+        }
+        
+        /* Navigation */
+        nav {
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        nav a {
+            color: crimson;
+            font-size: 16px;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: crimson;
+            color: white;
+        }
+        
+        /* Main section wrapper - 80% width, centered */
+        .main-wrapper {
+            width: 80%;
+            margin: 20px auto;
+            overflow: auto;
+        }
+        
+        /* First box - 60% width, 80% height, white background, crimson right border */
+        .box1 {
+            width: 60%;
+            height: 300px;
+            background-color: white;
+            border-right: 4px solid crimson;
+            float: left;
+            margin: 1%;
+            padding: 15px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: auto;
+        }
+        
+        /* Second box - 30% width, 80% height, white background, #732C7B right border */
+        .box2 {
+            width: 30%;
+            height: 300px;
+            background-color: white;
+            border-right: 4px solid #732C7B;
+            float: left;
+            margin: 1%;
+            padding: 15px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        
+        /* Absolutely positioned image in first box */
+        .box1 img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 80px;
+            height: auto;
+            border: 4px solid #732C7B;
+            border-radius: 5px;
+        }
+        
+        /* Text in boxes */
+        .box1 p, .box2 p {
+            margin: 0 0 10px 0;
+            line-height: 1.5;
+        }
+        
+        /* Clear float */
+        .clear {
+            clear: both;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- Header section -->
+        <header>
+            <img src="images2/berry2.jpg" alt="Berry" class="header-image">
+            <h1>Berry Delights</h1>
+            <div class="header-text">Fresh berries from our garden</div>
+            
+            <!-- Navigation -->
+            <nav>
+                <a href="#">Strawberry</a>
+                <a href="#">Raspberry</a>
+                <a href="#">Blueberry</a>
+            </nav>
+        </header>
+        
+        <!-- Main section wrapper -->
+        <div class="main-wrapper">
+            <!-- First box -->
+            <div class="box1">
+                <p>Strawberries are sweet, juicy berries that are rich in vitamin C and antioxidants. They're perfect for desserts, smoothies, or eating fresh.</p>
+                <p>Raspberries are delicate berries with a unique tart-sweet flavor. They're packed with fiber and vitamins.</p>
+                <p>Blueberries are known for their deep blue color and numerous health benefits. They're great in muffins, pancakes, or on their own.</p>
+                <!-- Absolutely positioned image -->
+                <img src="images2/berry2.jpg" alt="Berry">
+            </div>
+            
+            <!-- Second box -->
+            <div class="box2">
+                <p>Berries are not only delicious but also packed with nutrients. They're rich in antioxidants, vitamins, and fiber, making them a healthy addition to any diet.</p>
+                <p>Enjoy them fresh, frozen, or in your favorite recipes!</p>
+            </div>
+            
+            <div class="clear"></div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Berry Page</p>
+        </footer>
+    </div>
+</body>
+</html>
